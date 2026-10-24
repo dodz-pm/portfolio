@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#05050a">
+  <title>Dela Calzada | Portfolio</title>
+  <meta name="description" content="Portfolio of [Your Name]: a student learning [your field]. Skills, class projects, and contact details.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#home">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="brand__mark">&lt;/&gt;</span><span class="brand__name">Van</span>
+      </a>
+      <nav id="menu" class="menu" aria-label="Main">
+        <a href="#home"><i></i>Home</a>
+        <a href="#about"><i></i>About</a>
+        <a href="#skills"><i></i>Skills</a>
+        <a href="#projects"><i></i>Projects</a>
+        <a href="#contact"><i></i>Contact</a>
+      </nav>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="hero" id="home">
+      <div class="wrap hero__grid">
+        <div class="hero__copy reveal">
+          <p class="tag"><span class="dot"></span>4th Year | Information Technology | Cebu Eastern College Incorporation</p>
+          <h1>Hi, I'm<br><span class="grad">Van </span><span class="cursor" aria-hidden="true"></span></h1>
+          <p class="lead">I'm a student aspiring to become a Full-Stack Developer.<br> Transforming imagination into reality.</p>
+          <p class="focus"><span>Technical Focus</span>JavaScript, Python, Full-Stack Development</p>
+          <div class="cta">
+            <a class="btn btn--solid" href="#projects">View my work</a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero__visual reveal">
+          <figure class="portrait">
+            <img src="images/profile.webp" alt="Portrait of Van Kirby A. Dela Calzada" width="600" height="750">
+          </figure>
+          <div class="term" aria-hidden="true">
+            <p><b>~</b> Who Am I</p>
+            <p class="out">Van Kirby A. Dela Calzada</p>
+            <p><b>~</b> Course</p>
+            <p class="out">Information Technology<span class="cursor cursor--sm"></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap split">
+        <div class="section__head reveal">
+          <p class="eyebrow">Passion & Purpose </p>
+          <h2>About <span class="grad">me</span></h2>
+        </div>
+        <div class="prose reveal">
+          <p>Studying Information Technology at Cebu Eastern College Incorporation to pursue a career in Full-Stack Development.</p>
+          <p>I enjoy making someones imagination come to reality through code.</p>
+          <dl class="facts">
+            <div><dt>Studying</dt><dd>Information Technology</dd></div>
+            <div><dt>Location</dt><dd>Cebu City, Philippines</dd></div>
+            <div><dt>Interests</dt><dd>Full-Stack Development, Problem Solving, Technology Trends</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="eyebrow">Technical Skills</p>
+          <h2>What I can do <span class="grad">today</span></h2>
+          <p class="muted">An honest view of where I am. Levels reflect my current abilities as a student.</p>
+        </div>
+        <div class="skills">
+          <article class="skill reveal">
+            <h3>HTML &amp; CSS</h3>
+            <span class="level" data-level="3">Comfortable</span>
+            <p>Crafting clean and responsive web layouts.</p>
+          </article>
+          <article class="skill reveal">
+            <h3>JavaScript</h3>
+            <span class="level" data-level="2">Practising</span>
+            <p>Immersed in practicing and applying JavaScript concepts.</p>
+          </article>
+          <article class="skill reveal">
+            <h3>IoT</h3>
+            <span class="level" data-level="1">Learning</span>
+            <p>Learning to write embedded code for Arduino and other microcontrollers.</p>
+          </article>
+          <article class="skill reveal">
+            <h3>Python</h3>
+            <span class="level" data-level="3">Comfortable</span>
+            <p>Leveraging clean Python code for automation and data analysis.</p>
+          </article>
+        </div>
+        <p class="tools reveal"><span>Tools</span> VS Code | GitHub | Figma | Arduino</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section__head reveal">
+          <p class="eyebrow">Recent Works</p>
+          <h2><span class="grad">Projects</span></h2>
+          <p class="muted">Projects that showcase my skills and creativity.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal">
+            <a class="project__img" href="#" aria-label="Open [Project One]">
+              <img src="images/capstoneproject.jpg" alt="Screenshot of [Project One]" width="1200" height="750" loading="lazy">
+            </a>
+            <div class="project__body">
+              <p class="eyebrow">Capstone | 4th Year</p>
+              <h3>IoT Hand-Pump Monitoring System</h3>
+              <p>This IoT system monitors groundwater quality and detects early signs of hand-pump wear at community wells,
+                 then sends SMS alerts over GSM while running entirely off-grid on solar power. It solves the reactive,
+                 unmonitored management of rural hand pumps that leaves residents exposed to undetected contamination and sudden water outages.</p>
+              <p class="contrib"><strong>contribution</strong>Served as the core system architect and sole technical writer for the project.
+                 I authored the entire 3-chapter manuscript,
+                 designed the complete UI/UX layout,
+                 and engineered the structural blueprint for the IoT hardware configuration.</p>
+              <ul class="tags"><li>HTML & CSS</li><li>JavaScript</li><li>Flutter</li><li>Arduino</li><li>Figma</li></ul>
+              <a class="link" href="https://www.figma.com/proto/WqaZ7sPOE0p1jWq0tZUmwj/Untitled?node-id=0-1&t=pypGvYc6gdie0Jtr-1" 
+              target="_blank" rel="noopener">View project <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <a class="project__img" href="#" aria-label="Open [Project Two]">
+              <img src="images/arngren.jpg" alt="Screenshot of [Project Two]" width="1200" height="750" loading="lazy">
+            </a>
+            <div class="project__body">
+              <p class="eyebrow">HCI | 2nd Year</p>
+              <h3>Arngren</h3>
+              <p>To design a user-friendly interface for the Arngren app, focusing on enhancing the overall user experience and accessibility.</p>
+              <p class="contrib"><strong>contribution</strong> Designed the UI/UX for the Arngren app, ensuring a seamless and accessible user experience.</p>
+              <ul class="tags"><li>Figma</li><li>UI/UX Design</li><li>Prototyping</li></ul>
+              <a class="link" href="https://www.figma.com/proto/OiJlDPdg1x2IGHRjJ04o3R/Untitled?t=jdP58mP4et3xL304-1" target="_blank" rel="noopener">View project <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <a class="project__img" href="#" aria-label="Open [Project Three]">
+              <img src="images/eldoria.jpg" alt="Screenshot of [Project Three]" width="1200" height="750" loading="lazy">
+            </a>
+            <div class="project__body">
+              <p class="eyebrow">Game Development | 4th Year</p>
+              <h3>Chronicles of Eldoria</h3>
+              <p>To design and develop a fantasy-themed role-playing game with engaging storylines and immersive gameplay mechanics.</p>
+              <p class="contrib"><strong>contribution</strong> Major contributor in planning and designing the game's core mechanics, storylines, and user interface.</p>
+              <ul class="tags"><li>Godot</li><li>Creative Thinking</li><li>Github</li></ul>
+              <a class="link" href="https://github.com/lasit946/chronicles-of-eldoria" target="_blank" rel="noopener">View project <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--alt contact" id="contact">
+      <div class="wrap contact__inner reveal">
+        <p class="eyebrow">Get In Touch</p>
+        <h2>Let's <span class="grad">connect.</span></h2>
+        <p class="lead">Let's turn your ideas into reality!</p>
+        <a class="btn btn--solid btn--lg" href="mailto:dcshevan04@gmail.com">dcshevan04@gmail.com</a>
+        <ul class="links">
+          <li><a href="https://github.com/dodz-pm" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.facebook.com/vankirbs.delacalzada" target="_blank" rel="noopener">Facebook</a></li>
+          <!-- Optional resume: put the file at assets/resume.pdf, then remove the comment markers
+          <li><a href="assets/resume.pdf" download>Download resume</a></li> -->
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>© <span id="year">2026</span> Van Kirby A. Dela Calzada</p>
+      <a href="#top">↑ back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
